@@ -71,13 +71,13 @@ Crie uma função com as seguintes características:
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
 function minhaFuncao2(num1,num2,num3){
-    if(num1!=null&&num2==null&&num3==null){
+    if(num1!==undefined&&num2===undefined&&num3===undefined){
         return num1;
-    }else if(num1!=null&&num2!=null&&num3==null){
+    }else if(num1!==undefined&&num2!==undefined&&num3===undefined){
         return num1+num2;
-    }else if(num1!=null&&num2!=null&&num3!=null){
+    }else if(num1!==undefined&&num2!==undefined&&num3!==undefined){
         return (num1+num2)/num3;
-    }else if(num1==null&&num2==null&&num3==null){
+    }else if(num1===undefined&&num2===undefined&&num3===undefined){
         return false;
     }else{
         return null;
