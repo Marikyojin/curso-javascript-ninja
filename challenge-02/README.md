@@ -71,25 +71,29 @@ Crie uma função com as seguintes características:
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
 function minhaFuncao2(num1,num2,num3){
-  if((num1!=null)&&((num2&&num3)==null)){
-    return num1;
-    }else if((num3==null)&&((num1&&num2)!=null)){
-      return num1+num2;
-      }else if((num1&&num2&&num3)!=null){
+    if(num1!=null&&num2==null&&num3==null){
+        return num1;
+    }else if(num1!=null&&num2!=null&&num3==null){
+        return num1+num2;
+    }else if(num1!=null&&num2!=null&&num3!=null){
         return (num1+num2)/num3;
-          }else if((num1&&num2&&num3)==null){
-            return false;
-            }else{
-              return null;
-              };
-    };          
+    }else if(num1==null&&num2==null&&num3==null){
+        return false;
+    }else{
+        return null;
+    }
+
+};         
         
       
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
 minhaFuncao2(2);
 //2
+minhaFuncao2(2,3);
+//5
+minhaFuncao2(2,3,5);
+//1
 minhaFuncao2();
-minhaFuncao2();
-minhaFuncao2();
+//false
 ```
