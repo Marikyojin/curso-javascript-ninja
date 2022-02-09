@@ -56,19 +56,25 @@ pessoa.andar = function(metros){
 Adicione um método ao objeto `pessoa` chamado `parar`, que irá modificar o valor
 da propriedade `andando` para o valor booleano que representa "falso".
 */
-?
+pessoa.parar = function(){
+  andando=false;
+};
 
 /*
 Crie um método chamado `nomeCompleto`, que retorne a frase:
 - "Olá! Meu nome é [NOME] [SOBRENOME]!"
 */
-?
+pessoa.nomeCompleto = function(){
+  return "Olá! Meu nome é ${pessoa.nome}${pessoa.sobrenome}";
+};
 
 /*
 Crie um método chamado `mostrarIdade`, que retorne a frase:
 - "Olá, eu tenho [IDADE] anos!"
 */
-?
+pessoa.mostrarIdade = function(){
+  return "Olá, eu tenho ${pessoa.idade} anos!";
+};
 
 /*
 Crie um método chamado `mostrarPeso`, que retorne a frase:
