@@ -17,15 +17,15 @@ As propriedades e tipos de valores para cada propriedade desse objeto devem ser:
 - `caminhouQuantosMetros` - Number - recebe "zero" por padrão
 */
 var pessoa = {
-  nome:"Mariana";
-  sobrenome:"Pacheco";
-  sexo:"feminino";
-  idade: 27;
-  altura: 1.65;
-  peso: 62;
-  andando: false;
-  caminhouQuantosMetros: 0;
-  }
+  nome:"Mariana",
+  sobrenome:"Pacheco",
+  sexo:"feminino",
+  idade: 27,
+  altura: 1.65,
+  peso: 62,
+  andando: false,
+  caminhouQuantosMetros: 0
+  };
     
 
 /*
@@ -65,7 +65,7 @@ Crie um método chamado `nomeCompleto`, que retorne a frase:
 - "Olá! Meu nome é [NOME] [SOBRENOME]!"
 */
 pessoa.nomeCompleto = function(){
-  return "Olá! Meu nome é ${pessoa.nome}${pessoa.sobrenome}";
+  return "Olá! Meu nome é $(pessoa.nome) $(pessoa.sobrenome)";
 };
 
 /*
@@ -80,20 +80,24 @@ pessoa.mostrarIdade = function(){
 Crie um método chamado `mostrarPeso`, que retorne a frase:
 - "Eu peso [PESO]Kg."
 */
-?
+pessoa.mostrarPeso = function(){
+  return "Eu peso ${pessoa.idade}Kg.";
+};
 
 /*
 Crie um método chamado `mostrarAltura` que retorne a frase:
 - "Minha altura é [ALTURA]m."
 */
-?
+pessoa.mostrarAltura = function(){
+  return "Minha altura é ${pessoa.altura}m.";
+};
 
 /*
 Agora vamos brincar um pouco com o objeto criado:
 Qual o nome completo da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-?
+pessoa.nomeCompleto();
 
 /*
 Qual a idade da pessoa? (Use a instrução para responder e comentários
