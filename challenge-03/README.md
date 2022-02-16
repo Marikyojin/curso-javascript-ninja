@@ -229,6 +229,8 @@ pessoa.apresentacao = function(){
   +"!"; 
 };
 
+
+
 // Agora, apresente-se ;)
 pessoa.apresentacao();
 //'Olá, eu sou a Mariana Pacheco, tenho 30 anos 1.65 m , meu peso é 62 kg e, só hoje, eu já caminhei 10 metros!'
